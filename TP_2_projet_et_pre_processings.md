@@ -54,16 +54,14 @@ Si vous ne souhaitez pas créer de compte GitHub, vous pouvez simplement téléc
 ### Charger le template du projet dans IntelliJ
 
 Importez-le ensuite dans IntelliJ :
-- Ouvrez IntelliJ, dans la page d'accueil cliquez sur "import project". 
-- Sélectionner le chemin vers le projet décompressé.
-- Sélectionner "import project from external model", et sélectionner SBT
-- Click next
+- Ouvrez IntelliJ, dans la page d'accueil cliquez sur "Open or import". 
+- Double clickez sur le fichier build.sbt du repository github.
+- Sélectionnez "Import as project"
 - Si "project sdk" est vide cliquez sur new, intelliJ devrait directement ouvrir l’arborescence vers votre installation de java.
-- Sélectionner "use auto import" (Si cette option n’est pas disponible, puisqu’elle a été retirée de la dernière version d’IntelliJ, continuer sans rien cocher)
 - Click finish
-- SBT project data to import : vérifiez que les deux dossiers sont bien sélectionnés
-- Click OK
 - Attendre qu’intelliJ charge le projet et ses dépendances
+
+Si vous avez une erreur `NoClassDefFoundError`, cochez la case "Include dependencies with 'Provided' Scope" dans la run configuration (en haut à droite dans l'interface).
 
 ### Soumettre un script à Spark 
 

@@ -238,7 +238,7 @@ brew install sbt
 #### Sur les machines de TP
 
 IntelliJ 2016 nécessite *java 1.8* (qui n’est pas installé sur les machines de TP).  
-Donc télécharger la version 15 de IntelliJ Community pour linux ideaIC-15.0.6.tar.gz :
+Donc télécharger la version la plus récente de IntelliJ Community pour linux (2020.2.3) :
 https://www.jetbrains.com/idea/download/other.html.
 
 Décompresser IntelliJ via `tar -xvzf <idea>` (remplacer `<idea>` par le nom que vous voyez dans votre terminal).
@@ -258,7 +258,7 @@ Dans la fenêtre qui s’ouvre:
 - tune Idea to your task : ne rien faire => click next
 - scala : cliquer sur "Install" => start using IntelliJ
 
-Une fois IntelliJ installé, aller dans les "préférences" puis dans "plugins". Dans la barre de recherche de plugins, chercher "scala" et installer le plugins (s'il ne l’est pas déjà).
+Une fois IntelliJ installé, aller dans les "préférences" puis dans "plugins". Dans la barre de recherche de plugins, chercher "scala" et installer le plugins (s'il ne l’est pas déjà), avec scala 1.12. 
 
 #### Sur Ubuntu (machines perso : besoin des droits root)
 
@@ -306,18 +306,6 @@ Lancer IntelliJ, dans la fenêtre qui s’ouvre faire:
 - scala : cliquer sur "Install" => start using IntelliJ
 
 Une fois IntelliJ installé, aller dans les "préférences" puis dans "plugins". Dans la barre de recherche de plugins, chercher "scala" et installer le plugins (s'il ne l’est pas déjà)
-
-### Importer le projet (voir TP 2 pour télécharger le template de projet) dans IntelliJ
-
-Pour importer le projet, suivre la partie [Téléchargement du projet](TP_2_projet_et_pre_processings.md#téléchargement-du-projet) dans le TP 2.
-
-Ouvrir IntelliJ puis :
-- Import project
-- Import project from external model, et choisir SBT
-- Sélectionner le chemin vers le projet décompressé
-- Sélectionner "use auto import" / project SDK cliquer sur "new" puis "JDK" sélectionner "java-8-oracle" dans l’arborescence / cliquer sur Finish.
-- sbt data project to import, ne rien faire, cliquer sur OK
-- Attendre
 
 ## HOW TO: lancer un job Spark
 
